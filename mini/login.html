@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Welcome to the Login page</title>
+        <link rel="stylesheet" type="text/css" href="login.css">
+        <script src="login.js"></script>
+    </head>
+    <body>
+        <div class="container"> 
+            <div class="main"> </div>
+            <div class="welcome">Sign-In</div>
+            <form method="post" class="form">
+                <input type="text" class="credentials" id="username" placeholder="Username" name="username">
+                <input type="password" class="credentials" id="psswrd" placeholder="Password" name="password">
+                <?php
+                    include("validation.php");
+                ?>
+                <button onclick="validation()" class="loginbutton" name="login">LogIn</button>
+                <div style="position:absolute; left:41.6%; top:72%;">
+                    <a style="color:white; display:inline-block;">Forgot password?</a>
+                    <a class='link' href='change_password.html'><b>Change your password</b></a></br>
+                </div>
+                <div style="position:absolute; left:41.6%; top:74.6%;">
+                    <a style="color:white; display:inline-block;">Don't have an account?</a>
+                    <a class='link' href='create.html'><b>Create an account</b></a>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

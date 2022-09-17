@@ -1,0 +1,164 @@
+::-webkit-scrollbar{
+    width: 6px;
+}
+::-webkit-scrollbar-track{
+    box-shadow: inset 5px 5px 5px black; 
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: #7C3F7A; 
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: violet; 
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#section1{
+    width: 100%;
+    height: 100vh;
+}
+#section1 h1,h3{
+    font-family: 'PT Serif', serif;
+    position: absolute;
+}
+#section1 h1{
+    font-size: 70px;
+    top: 130px;
+    left: 125px;
+    background: linear-gradient(45deg,#ee0979,#ffa600);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
+}
+#section1 h3{
+    font-size: 20px;
+    top: 300px;
+    left: 125px;
+    background: linear-gradient(45deg,#ef0179,#ffa600);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
+}
+#section1 #explore{
+    position: absolute;
+    background-color: transparent;
+    border-color: white;
+    top: 370px;
+    left: 125px;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 15px;
+    color: white;
+}
+#section1 #explore:hover{
+    background-color: black;
+    color: magenta;
+    border: none;
+}
+#section1 #online{
+    white-space: normal;
+    position: absolute;
+    background-color: transparent;
+    border-color: white;
+    top: 370px;
+    left: 220px;
+    padding: 10px;
+    padding-left: 5px;
+    width: 90px;
+    border-radius: 10px;
+    font-size: 15px;
+    color: white;
+    text-align: 4px;
+}
+#section1 #online:hover{
+    background-color: black;
+    color: magenta;
+    border: none;
+}
+#section1 .signup{
+    position: absolute;
+    font-size: 20px;
+    color: white;
+    background: transparent;
+    padding: 9px;
+    justify-items: left;
+    top: 10px;
+    left: 1400px;
+    border-radius: 10px;
+    border-color: whitesmoke;
+}
+#section1 .signup:hover{
+    color: whitesmoke;
+    background-color: black;
+    border: none;
+}
+#section2{
+    width: 100%;
+    height: 100vh;
+}
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    z-index: 1;
+}
+.container .card{
+    position: relative;
+    width: 350px;
+    height: 500px;
+    margin-top: 200px;
+    margin-right: 70px;
+    box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+    border-radius: 15px;
+    background: rgba(255,255,255,0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgba(255,255,255,0.5);
+    border-left: 1px solid rgba(255,255,255,0.5);
+    backdrop-filter: blur(5px);
+}
+.container .card .content{
+    padding: 20px;
+    text-align: center;
+    opacity: 0.5;
+    transition: 0.5s;
+}
+.container .card:hover .content{
+    opacity: 1;
+}
+.container .card .content h2{
+    position: absolute;
+    top: 50px;
+    left: 100px;
+    font-size: 3.2em;
+    color: #fff;
+    pointer-events: none;
+}
+.container .card .content p{
+    font-size: 1.4em;
+    color: #fff;
+    font-weight: 300;
+}
+#section1 #download{
+    white-space: normal;
+    position: absolute;
+    background-color: transparent;
+    border-color: white;
+    top: 370px;
+    left: 310px;
+    padding: 10px;
+    width: 90px;
+    border-radius: 10px;
+    font-size: 15px;
+    color: white;
+}
